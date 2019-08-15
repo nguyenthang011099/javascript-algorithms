@@ -1,0 +1,24 @@
+<script>
+// sắp xếp nổi bọt :D 
+function bubbleSort(arr){
+ 	n = arr.length;
+	for (var i = 0; i < n-1; i++){
+		for (var j = n-1; j > i; j--){
+			console.log(i,j);
+			if (arr[j] < arr[j-1]){
+				//swap
+				temp = arr[j];
+				arr[j] = arr[j-1];
+				arr[j-1] = temp;
+			}
+		}
+	}
+	return;
+}
+
+var A = [3,4,0,3,5,8,1];
+bubbleSort(A);
+console.log(A);
+
+// [0, 1, 3, 3, 4, 5, 8]
+</script>

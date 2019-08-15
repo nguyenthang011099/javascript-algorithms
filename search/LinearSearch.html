@@ -1,0 +1,16 @@
+<script>
+// tìm kiếm tuyến tính :D 
+function linnerSearch(arr , value){
+	var n = arr.length;
+	for (var i = 0; i < n; i++) 
+		if (arr[i] == value)
+			return i;
+	return -1;
+}
+
+var A = [12,55,3,213,123,4,234,235,546,3,5];
+
+console.log(linnerSearch(A, 213));
+
+// 3
+</script>
