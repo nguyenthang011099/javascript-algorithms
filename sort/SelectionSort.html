@@ -1,0 +1,30 @@
+<script>
+	// sắp xếp chọn
+function selectionSort(arr){
+	var n = arr.length;
+	for (var i = 0; i < n; i++) {
+		min = i;
+		for (var j = i + 1; j < n; j++) 
+			if (arr[j] < arr[min]) 
+				min = j
+		
+		if (min != i) {
+			// swap
+		    temp = arr[min];
+			arr[min] = arr[i];
+			arr[i] = temp;
+		}
+	}
+	return arr;
+
+}
+var A = [2,3,4,1,3,5,44,20];
+
+console.log(selectionSort(A));
+
+// [1, 2, 3, 3, 4, 5, 20, 44]
+
+
+
+
+</script>
